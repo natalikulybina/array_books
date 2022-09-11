@@ -79,11 +79,11 @@ const books = [
 ]
 
 
-const bestGenre = books.filter(index => index.genre === 'Fantasy').map(index => index.name.toUpperCase());
+const bestGenre = books.filter(item => item.genre === 'Fantasy').map(item => item.name.toUpperCase());
 console.log(bestGenre);
 
-const twentiethCentury = books.filter(index => index.year > 1900 && index.year <= 2000).map(index => index.name);
+const twentiethCentury = books.filter(item => item.year > 1900 && item.year <= 2000).map(item => item.name);
 console.log(twentiethCentury);
 
-const twentyFirstCentury = books.filter(index => index.year > 2000 && index.year <= 2100).map(index => index.name);
+const twentyFirstCentury = books.filter(item => item.year > 2000 && item.year <= 2100).map(item => item.name);
 console.log(twentyFirstCentury);
